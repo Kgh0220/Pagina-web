@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunted Food - Menú</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>:<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2023/12/07/16/41/ink-8435869_1280.jpg);
+}
+header {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/40/93/00/1000_F_340930009_WtmPbofCmuBGo3SxTR59e3qUrUs8Bm2Y.jpg);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    font-size: 70px;
+    font-family:Verdana, Tahoma, sans-serif;
+    margin-bottom: auto;
+}
+h3 {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+nav ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+}
+nav ul li a {
+    margin: 0 20px;
+    background-color: #ffd102;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-style:oblique;
+}
+mark {
+    background-color:#ffd102 
+}
+.menu-button, .menu-button-2 {
+    width: 350px;  
+    height: 350px;
+    cursor: pointer; 
+    border-radius: 100%;
+}
+.dropdown-menu {
+    display: none; 
+    position: center;
+    background-color: #1a1a1a;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+    color: #ffd102;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffd102;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2e2e2e;
+}
+.menu-section ul li {
+            background-color: #2e2e2e;
+            margin: 5px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            color: #ffd102;
+}
+.menu-section ul li span {
+            font-weight: bold;
+            background-color: #2e2e2e;
+            color: #ffd102;
+}
+.price {
+            color: #4CAF50;
+            text-align: end;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+}
+.columna-izquierda, .columna-central, .columna-derecha {
+    background-color: rgb(19, 19, 19);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+h2 {
+    color: #ffd102;
+    margin-top: 50px;
+    font-size: 30px;
+}
+strike {
+    color: #6b6b6b;
+}
+b img {
+    transform: rotate(270deg);
+}
+</style> 
+<body>
+    <header>
+        <h1><mark>Hunted Food</mark></h1>
+        <h3><mark>comida rápida de calidad</mark></h3>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="menu.html"><b><img src="pizza-emoji.png" width="40" height="40" align="left">Menú</b></a></li>
+                <li><a href="services.html"><b>Servicios</b></a></li>
+                <li><a href="contact.html"><b>Contacto</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+       <aside class="columna-izquierda">
+        <div class="menu-container">
+            <h2>> HAMBURGUESAS <</h2>
+            <img src="hamburger.png" alt="Botón 1" id="menuButton1" class="menu-button">
+              <div id="dropdownMenu1" class="dropdown-menu">
+                <ul>
+                    <li><span>Hamburguesa Clásica</span> <span class="price">8.50€</span></li>
+                    <li><span>Hamburguesa con Queso</span> <span class="price">9.00€</span></li>
+                    <li><span>Hamburguesa BBQ</span> <span class="price">10.00€</span></li>
+                    <li><span>Hamburguesa doble</span> <strike>11.50€</strike> <span class="price">6.90€</span></li>
+                    <li><span>Hamburguesa Vegana</span> <span class="price">9.50€</span></li>
+                </ul>
+              </div>
+        <div class="menu-container">
+            <h2>> PIZZAS <</h2>
+            <img src="pizza.png" alt="Botón 2" id="menuButton2" class="menu-button">
+              <div id="dropdownMenu2" class="dropdown-menu">
+                <ul>
+                    <li><span>Pizza Margarita</span> <span class="price">7.50€</span></li>
+                    <li><span>Pizza Pepperoni</span> <span class="price">8.50€</span></li>
+                    <li><span>Pizza 4 quesos</span> <strike>9.00€</strike> <span class="price">6.30€</span></li>
+                    <li><span>Pizza Hawaiana</span> <span class="price">8.00€</span></li>
+                    <li><span>Pizza Vegetariana</span> <span class="price">9.00€</span></li>
+                </ul>
+              </div>
+              <img src="cocina.jpg" width="400" height="400" align="center">
+        </div>
+       </aside>
+       
+        <main class="columna-central">
+            <div class="menu-container">
+                <h2>> BOCADILLOS <</h2>
+                <img src="sandwich.png" alt="Botón 3" id="menuButton3" class="menu-button">
+                  <div id="dropdownMenu3" class="dropdown-menu">
+                    <ul>
+                        <li><span>Bocadillo de Jamón</span> <span class="price">4.50€</span></li>
+                        <li><span>Bocadillo de Pollo</span> <span class="price">5.00€</span></li>
+                        <li><span>Bocadillo Vegetal</span> <span class="price">4.80€</span></li>
+                        <li><span>Bocadillo de Tortilla</span> <span class="price">4.20€</span></li>
+                        <li><span>Bocadillo de atún</span> <strike>5.50€</strike> <span class="price">3.85€</span></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="menu-container">
+                <h2>> BEBIDAS <</h2>
+                <img src="coffee.png" alt="Botón 4" id="menuButton4" class="menu-button">
+                  <div id="dropdownMenu4" class="dropdown-menu">
+                    <ul>
+                        <li><span>Agua Mineral</span> <span class="price">1.50€</span></li>
+                        <li><span>Refresco</span> <span class="price">2.00€</span></li>
+                        <li><span>Cerveza</span> <span class="price">2.50€</span></li>
+                        <li><span>Zumo Natural</span> <strike>3.00€</strike> <span class="price">2.70€</span></li>
+                        <li><span>Café</span> <span class="price">1.80€</span></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="menu-container">
+                <h2>> OFERTA SEMANAL <</h2>
+                <img src="ofertaa.jpg" alt="Botón 7" id="menuButton7" class="menu-button">
+                  <div id="dropdownMenu7" class="dropdown-menu">
+                    <ul>
+                        <li><span>Hamburguesa doble</span> <strike>11.50€</strike> <span class="price">6.90€</span></li>
+                        <li><span>Pizza 4 quesos</span> <strike>9.00€</strike> <span class="price">6.30€</span></li>
+                        <li><span>Bocadillo de atún</span> <strike>5.50€</strike> <span class="price">3.85€</span></li>
+                        <li><span>Zumo Natural</span> <strike>3.00€</strike> <span class="price">2.70€</span></li>
+                        <li><span>Alitas de pollo</span> <strike>5.00€</strike> <span class="price">4.00€</span></li>
+                        <li><span>Tarta de queso</span> <strike>4.50€</strike> <span class="price">3.60€</span></li>
+                    </ul>
+                  </div>
+            </div>
+        </main>
+            
+        <aside class="columna-derecha">
+            <div class="menu-container">
+                <h2>> PARA PICAR <</h2>
+                <img src="french-fries.png" alt="Botón 5" id="menuButton5" class="menu-button" align="center">
+                  <div id="dropdownMenu5" class="dropdown-menu">
+                    <ul>
+                        <li><span>Patatas Fritas</span> <span class="price">3.50€</span></li>
+                        <li><span>Nuggets de Pollo</span> <span class="price">4.50€</span></li>
+                        <li><span>Alitas de pollo</span> <strike>5.00€</strike> <span class="price">4.00€</span></li>
+                        <li><span>Ensalada Mixta</span> <span class="price">4.00€</span></li>
+                        <li><span>Aros de Cebolla</span> <span class="price">3.80€</span></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="menu-container">
+                <h2>> POSTRES <</h2>
+                <img src="pie.png" alt="Botón 6" id="menuButton6" class="menu-button" align="center">
+                  <div id="dropdownMenu6" class="dropdown-menu">
+                    <ul>
+                        <li><span>Helado de Vainilla</span> <span class="price">3.00€</span></li>
+                        <li><span>Tarta de queso</span> <strike>4.50€</strike> <span class="price">3.60€</span></li>
+                        <li><span>Brownie</span> <span class="price">3.80€</span></li>
+                        <li><span>Fruta de Temporada</span> <span class="price">2.50€</span></li>
+                        <li><span>Crema Catalana</span> <span class="price">4.00€</span></li>
+                    </ul>
+                  </div>
+                  <img src="cocina.jpg" width="400" height="400" align="center">
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

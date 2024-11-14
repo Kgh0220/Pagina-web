@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunted Food - Menú</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>:<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2023/12/07/16/41/ink-8435869_1280.jpg);
+}
+header {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/40/93/00/1000_F_340930009_WtmPbofCmuBGo3SxTR59e3qUrUs8Bm2Y.jpg);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    font-size: 70px;
+    font-family:Verdana, Tahoma, sans-serif;
+    margin-bottom: auto;
+}
+h3 {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+nav ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+}
+nav ul li a {
+    margin: 0 20px;
+    background-color: #ffd102;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-style:oblique;
+}
+mark {
+    background-color:#ffd102 
+}
+b img, img {
+    transform: rotate(270deg);
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    gap: 20px; 
+    max-width: 100%;
+    padding: 20px;
+}
+.columna-izquierda, .columna-derecha {
+    background-color: rgb(19, 19, 19);
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #ffd102;
+}
+h2 {
+    text-align: auto;
+    font-style: italic;
+    color: #ffd102;
+}
+p {
+    text-align: left;
+    font-style: italic;
+    color: #ffd102;
+}
+</style> 
+<body>
+    <header>
+        <h1><mark>Hunted Food</mark></h1>
+        <h3><mark>comida rápida de calidad</mark></h3>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="menu.html"><b>Menú</b></a></li>
+                <li><a href="services.html"><b>Servicios</b></a></li>
+                <li><a href="contact.html"><b><img src="pizza-emoji.png" width="40" height="40" align="left">Contacto</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+       <main class="columna-izquierda">
+        <h2><img src="pizza-emoji.png" width="40" height="35" align="left"><mark>CONTACTO PRINCIPAL (Realizar pedidos)</mark></h2>
+        <p>Correo: huntedfoodpri@gmail.com</p>
+        <p>Teléfono: +34 900 35 64 23 </p>
+      </main>
+      <aside class="columna-derecha">
+        <h2><img src="pizza-emoji.png" width="40" height="35" align="left"><mark>CONTACTO ATENCIÓN AL CLIENTE</mark></h2>
+        <p>Correo: huntedfoodaac@gmail.com</p>
+        <p>Teléfono: +34 900 86 43 70 </p>
+      </aside>
+    </div>
+</body>

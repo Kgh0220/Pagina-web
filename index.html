@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunted Food - Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>:<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2023/12/07/16/41/ink-8435869_1280.jpg);
+}
+header {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/40/93/00/1000_F_340930009_WtmPbofCmuBGo3SxTR59e3qUrUs8Bm2Y.jpg);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    font-size: 70px;
+    font-family:Verdana, Tahoma, sans-serif;
+    margin-bottom: auto;
+}
+h3 {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+nav ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+}
+nav ul li a {
+    margin: 0 20px;
+    background-color: #ffd102;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-style:oblique;
+}
+mark {
+    background-color:#ffd102 
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+}
+.columna-izquierda, .columna-derecha {
+    background-color: rgb(19, 19, 19);
+    padding: 20px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: #ffd102;
+}
+p {
+    text-align: center;
+    font-style: italic;
+    color: #ffd102;
+}
+h4 {
+    text-align: center;
+    color: #ffd102;
+}
+h5 {
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    color: #ffd102;
+}
+b img {
+    transform: rotate(270deg);
+}
+</style> 
+<body>
+    <header>
+        <h1><mark>Hunted Food</mark></h1>
+        <h3><mark>comida rápida de calidad</mark></h3>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b><img src="pizza-emoji.png" width="40" height="40" align="left">Inicio</b></a></li>
+                <li><a href="menu.html"><b>Menú</b></a></li>
+                <li><a href="services.html"><b>Servicios</b></a></li>
+                <li><a href="contact.html"><b>Contacto</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <main class="columna-izquierda">
+            <h5>. . . . . . . . . . . . . . . . . . . . . .</h5>
+            <h2><b>¿De qué trata "Hunted Food"?</b></h2>
+            <h4>"Hunted food" es una página dedicada al envio a domicilio de comida rápida, contando con una gran variedad de platos que no te querrás perder. En esta página web podrás informarte tanto de nuestro menú como de sus respectivos precios.</h4>    
+            <h5>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</h5>       
+            <h2><b>¿A qué lugares se pueden realizar envíos?</b></h2>
+            <h4>En principio, Hunted Food está disponible para todas las Islas Canarias, nuestra localidad aún no ha llegado a ampliarse hasta la península de España, pero en cuanto podamos, procuraremos hacerlo cuanto antes. </h4> 
+            <h5>. . . . . . . . . . . . . . . . . . . .</h5>          
+            <h2><b>¿Cómo realizo un pedido?</b></h2>
+            <h4>Para realizar un pedido, es necesario que accedas a la página "Contacto" y realices una llamada al número indicado para pedir comida a domicilio, una vez en la llamada seleccionas el tipo de servicio que desea realizar (puede encontrar los servicios de los que disponemos en la pestaña "Servicios") para luego decirnos su ubicación y se te informará sobre el precio total de este al igual que del tiempo estimado en el que debería tardar, luego se te enviará un correo con una dirección web para que se haga el pago por adelantado. Ya por último, solo queda esperar a que su pedido llegue.</h4>
+            <h5>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</h5>
+            <h2><b>¿Qué hago en caso de que mi pedido no llegue?</b></h2>
+            <h4>Si el pedido tarda el doble de tiempo del estimado en llegar a su ubicación, se le devolverá un 50% de lo que costara el pedido en un inicio. En caso de que el pedido nunca llegue, acceda a la página "Contacto" y llame al número especializado a la atención al cliente, donde podrá informarle sobre el problema y se le hará una devolución completa de su pedido. </h4>  
+        </main>
+
+        <aside class="columna-derecha">
+            <h2><b>¡OFERTAS DE HASTA 40%!</b></h2>
+            <button class="btn">
+                <a href="menu.html">
+                <img src="oferta.jpg" width="300" height="200" align="center">
+                </a>
+            </button>
+            <p>Consulte las ofertas que estamos ofreciendo esta semana</p>
+            <h5>. . . . . . . . . . . . . . . . . . . .</h5>  
+            <h2><b>¡SOLICITA TU PEDIDO YA!</b></h2>
+            <button class="btn">
+                <a href="contact.html">
+                <img src="images.png" width="300" height="300" align="center">
+                </a>
+            </button>
+            <p>¿A qué esperas para pedir?</p>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hunted Food Company. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
